@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <link rel="stylesheet" href="style.css">
     <title>dotLinux</title>
 </head>
@@ -10,11 +10,26 @@
     <div class="firstpage">
         <div class="header">
             <a class="downloadbutton" href="dotLinux.iso">dotLinux</a>
-            <h1 class="downloadbuttontext"><-- Download here :3</h1>
         </div>
-        <div class="changelog">
-            <h1>Changes</h1>
+        <h1 class="changelogtexttitle">Changes</h1>
+        <div class="changelog" id="changelog">
+            
         </div>
     </div>
+
+    <div class="footer">
+        <h1 class="footertext">limoncatt - 2025</h1>
+    </div>
+
+    <svg style="display:none;">
+        <filter id="displacementFilter">
+            <feImage href="liquidass.png" preserveAspectRatio="none"/>
+            <feDisplacementMap in="SourceGraphic"
+                scale="200" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+    </svg>
+
+    
+    <script src="changes.js"></script>
 </body>
 </html>
