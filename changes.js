@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const changelogContainer = document.getElementById("changelog");
 
-  // Reverse the array so the newest entry appears first
   changelogData.slice().reverse().forEach(entry => {
     const card = document.createElement("div");
     card.classList.add("changelogcard");
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     changelogContainer.appendChild(card);
   });
 
-  // Animate with stagger
   const cards = document.querySelectorAll(".changelogcard");
   const observer = new IntersectionObserver(
     (entries, obs) => {
