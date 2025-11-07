@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const title = document.createElement("h1");
     title.textContent = entry.title;
+    card.classList.add("changelogtexttitle");
     card.appendChild(title);
 
     entry.paragraphs.forEach(text => {
